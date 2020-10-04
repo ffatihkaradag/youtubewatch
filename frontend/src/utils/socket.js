@@ -4,7 +4,9 @@ import { showToast } from '../utils/helper'
 export const createConnection = (name, roomId = null, videoId = null) => {
   // create the socket connection with socket server
   return new Promise((resolve) => {
-    const socket = io(process.env.REACT_APP_SERVER, { path: '/socket' })
+    const socket = io('https://youutube-watch.herokuapp.com/', {
+      path: '/socket'
+    })
     socket.on('connect', () => {
       socket.emit('join', {
         roomId: roomId || socket.id,
