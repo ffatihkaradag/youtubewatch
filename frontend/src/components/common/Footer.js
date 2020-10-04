@@ -4,26 +4,18 @@ import { colors } from '../../config/colors'
 
 const Footer = (props) => (
   <StyledFooter>
-    Crafted with&nbsp;
+    developer &nbsp;
     <ion-icon
       name="heart-outline"
       style={{ color: colors.primaryColor, fontSize: '1.3em' }}
     ></ion-icon>
     &nbsp;by&nbsp;
     <a
-      href="https://github.com/ahmedsadman"
+      href="https://github.com/ffthkrdg"
       target="_blank"
       rel="noopener noreferrer"
     >
-      ahmedsadman
-    </a>
-    &nbsp;(Source at&nbsp;
-    <a
-      href="https://github.com/ahmedsadman/redparty"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <ion-icon name="logo-github" style={{ fontSize: '1.3em' }}></ion-icon>)
+      ffthkrdg
     </a>
   </StyledFooter>
 )

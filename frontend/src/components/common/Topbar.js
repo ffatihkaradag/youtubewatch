@@ -7,8 +7,8 @@ const Topbar = (props) => (
   <Row nogutter>
     <Col xs={12}>
       <StyledBar>
-        <span style={{ color: colors.primaryColor }}>RED</span>
-        &nbsp;PARTY
+        <span style={{ color: colors.primaryColor }}>Youtube</span>
+        &nbsp;Watch
       </StyledBar>
     </Col>
   </Row>
