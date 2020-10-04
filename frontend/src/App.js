@@ -1,11 +1,15 @@
 import React from 'react'
-import './App.css'
+import { UserContextProvider } from './contexts/UserContext'
+import { SignalContextProvider } from './contexts/SignalContext'
+import Routes from './Routes'
 
 function App() {
   return (
-    <div className="App">
-      <h2>youtube watch!</h2>
-    </div>
+    <UserContextProvider>
+      <SignalContextProvider>
+        <Routes />
+      </SignalContextProvider>
+    </UserContextProvider>
   )
 }
 
